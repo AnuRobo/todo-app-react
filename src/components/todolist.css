@@ -1,0 +1,125 @@
+.container {
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.todo__container {
+  width: min(85%, 800px);
+  margin-top: 10rem;
+  text-align: center;
+}
+.todo__icon {
+  font-size: 7rem;
+  filter: saturate(7%);
+}
+.todo__container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: rgb(201, 201, 201);
+}
+
+.input__list__container {
+  background: #fff;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input__list__container input {
+  border: 0;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  padding: 1rem 0.8rem;
+  flex: 1;
+}
+.input__list__container input:focus {
+  outline: 0;
+}
+.input__list__container input::placeholder {
+  color: rgb(94, 94, 94);
+}
+
+/* add__item */
+.input__list__container .add__item {
+  flex-basis: 40px;
+  font-size: 2.2rem;
+  color: #fff;
+  background: rgb(94, 94, 94);
+  padding: 4.7px 0;
+  border: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 0.1px;
+}
+.input__list__container .add__item:active {
+  transform: scale(1.05);
+  background-color: green;
+}
+/* update__item */
+.input__list__container .update__item {
+  flex-basis: 40px;
+  font-size: 2.2rem;
+  color: #fff;
+  background: rgb(94, 94, 94);
+  padding: 4.7px 0;
+  border: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 0.1px;
+}
+.input__list__container .update__item:active {
+  transform: scale(1.05);
+  color: #000;
+  background-color: rgb(245, 229, 1);
+}
+
+/* list styling start from here */
+.todo__list {
+  background-color: #000;
+  border: 1px dotted white;
+  color: #fff;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+}
+.todo__list:hover {
+  color: #000;
+  background-color: rgb(38, 179, 235);
+  border: 1px dotted #000;
+}
+.todo__list h2 {
+  font-size: 1.8rem;
+  /* color: #fff; */
+}
+.todo__list .edit__item {
+  margin-right: 3rem;
+  font-size: 2.2rem;
+  color: rgb(230, 221, 136);
+}
+.todo__list .edit__item:active {
+  color: rgb(245, 229, 1);
+  transform: scale(0.85);
+}
+
+.todo__list .delete__item {
+  font-size: 2.2rem;
+  /* color: rgb(173, 162, 162); */
+  color: rgb(248, 148, 148);
+}
+.todo__list .delete__item:active {
+  color: rgb(245, 1, 1);
+  transform: scale(0.85);
+}
+
+button {
+  font-size: 1.8rem;
+  padding: 0.9rem 2.6rem;
+  margin-top: 2rem;
+}
